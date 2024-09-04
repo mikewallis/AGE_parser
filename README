@@ -1,3 +1,7 @@
 parser that looks at Altair GridEngine accounting logs
 
+get_random_sample.sh does what it says in the name; pulls a random 5% of the accounting file to use as a sample dataset for testing.
+
+parser expects a filename and a numpy/pandas enabled environment
+
 ~m; 03092024

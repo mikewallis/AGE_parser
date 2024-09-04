@@ -2,7 +2,11 @@
 import sys
 import pandas as pd
 
-filename = sys.argv[1]
+if len(sys.argv) > 1:
+    filename = sys.argv[1]
+else:
+    print("Usage: "+sys.argv[0] +" <path_to_logfile>")
+    exit()
 
 # this is just defining the cols and dropping the ones we don't use
 # remember, latin-1 encoding! otherwise 'submit_cmd' will fail
